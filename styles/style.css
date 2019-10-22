@@ -5,45 +5,53 @@
 .body {
     margin: 0;
     font-family: 'Rubik', sans-serif;
-    border: #fabada 2px solid;
+    /* border: #fabada 2px solid; */
     height: 100vh;
 }
 
 .header__container{
-    border: green 5px solid;
+    /* border: green 5px solid; */
     display: flex;
     flex-direction: column;
     align-items: center;
     position: fixed;
-    width: 100%;
     background: #FFFFFF;
-
+    width: 100%;
+   
 }
 
 .header__image__adalab{
-    border: blue 1px solid;
+    /* border: blue 1px solid; */
     width: 155px;
-    
+    padding: 10px 10px;
 }
 
 .header__list{
-    border: red 1px solid;
+    /* border: red 1px solid; */
     display: flex;
     justify-content: space-between;
     padding: 0;
     width: 155px;
     font-size: 16px;
     font-weight: 500;
-    color: #4a4a4a;
+    margin: 0;
+    padding: 0 0 15px 0;
+
 }
 
 .header__list__item{
     display: inline;
+
+}
+
+.header__link__blog,
+.header__link__contact{
+    color: #4a4a4a;
+
 }
 
 .main__container{
     border:red 7px solid;
-    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -53,5 +61,45 @@
     background: #3CDBC0;
 }
 .main__title{
-    width: 100px;
+    width: 400px;
+    margin: 0;
+    text-align: center;
 }
+
+
+/* MEDIAQUERIE PARA TABLET Y ESCRITORIO */
+
+@media all and (min-width:768px) {
+    .header__container{
+    border: green 5px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    }
+
+    .header__list{
+        /* border: red 1px solid; */
+        padding: 0;
+    }
+
+
+}
+
+
+a:link {
+    text-decoration: none
+  }
+  
+  a:visited {
+    text-decoration: none
+  }
+  
+  a:hover {
+    text-decoration: none
+  }
+  
+  a:active {
+    text-decoration: none
+  }
