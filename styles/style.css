@@ -17,6 +17,8 @@
     position: fixed;
     background: #FFFFFF;
     width: 100%;
+    z-index: 1;
+    height: 115px;
    
 }
 
@@ -51,7 +53,7 @@
 }
 
 .main__container{
-    border:red 7px solid;
+    /* border:red 7px solid; */
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -59,34 +61,15 @@
     font-size: 30px;
     color: #FFFFFF;
     background: #3CDBC0;
+    position: relative;
+    top: 115px;
+
 }
 .main__title{
     width: 400px;
     margin: 0;
     text-align: center;
 }
-
-
-/* MEDIAQUERIE PARA TABLET Y ESCRITORIO */
-
-@media all and (min-width:768px) {
-    .header__container{
-    border: green 5px solid;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 30px;
-    }
-
-    .header__list{
-        /* border: red 1px solid; */
-        padding: 0;
-    }
-
-
-}
-
 
 a:link {
     text-decoration: none
@@ -103,3 +86,33 @@ a:link {
   a:active {
     text-decoration: none
   }
+
+
+
+/* MEDIAQUERIE PARA TABLET Y ESCRITORIO */
+
+@media all and (min-width:768px) {
+    .header__container{
+    /* border: green 5px solid; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    height: 100px;
+    }
+
+    .header__list{
+        /* border: red 1px solid; */
+        padding: 0;
+    }
+
+    .main__container{
+        /* border:red 7px solid; */
+        position: relative;
+        top: 100px;
+
+
+}
+
+
